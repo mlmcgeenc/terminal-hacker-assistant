@@ -6,6 +6,7 @@ export const buildLetterLibrary = (wordList: Word[]): LetterLibrary => {
 
 	wordList.forEach((word) => {
 		[...word.text].forEach((letter, position) => {
+      // @ts-ignore
 			letterLibrary[position][letter] = (letterLibrary[position][letter] || 0) + 1;
 		});
 	});

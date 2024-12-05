@@ -7,6 +7,7 @@ export const scoreWords = ({ wordList, letterLibrary }: ScoreWordsType): Word[] 
 
 	wordList.forEach((word: Word) => {
 		[...word.text].forEach((char, i) => {
+      // @ts-ignore
 			word.score += letterLibrary[i][char] || 0;
 		});
 		newList.push(word);
