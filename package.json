@@ -6,7 +6,7 @@
 	"homepage": "https://mlmcgeenc.github.io/terminal-hacker-assistant/",
 	"scripts": {
 		"dev": "vite --host",
-		"build": "tsc -b && vite build && npm run build:css && react-scripts build",
+		"build": "tsc -b && vite build && npm run build:css",
 		"lint": "eslint .",
 		"preview": "vite preview",
 		"start": "concurrently \"npm run start:css\" \"npm run dev\"",
