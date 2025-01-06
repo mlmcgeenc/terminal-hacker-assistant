@@ -38,6 +38,7 @@ export const WordList = ({ handleLikenessEntry }: WordListComponentType) => {
 								})
 							}
 						>
+              <option key='origin' value='-'>-</option>
 							{Array.from({ length: word.text.length + 1 }, (_, i) => (
 								<option key={i} value={i}>
 									{i}
