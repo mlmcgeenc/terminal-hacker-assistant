@@ -47,10 +47,14 @@ interface ButtonGroupType {
 
 type LetterLibrary = Record<string, Record<string, number>>[];
 
+type WordListItemProps = WordListComponentType & {
+	word: Word;
+};
+
 export type {
 	Word,
 	WordListComponentType,
-  InputType,
+	InputType,
 	HandleLikenessEntryType,
 	AddWordToListType,
 	ScoreWordsType,
@@ -58,4 +62,5 @@ export type {
 	ButtonType,
 	ButtonGroupType,
 	LetterLibrary,
+	WordListItemProps,
 };
